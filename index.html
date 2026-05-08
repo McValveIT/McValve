@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McValve | Lista Server Minecraft</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #121212; color: #e0e0e0; margin: 0; padding: 20px; }
+        header { text-align: center; padding: 50px 20px; background: #1f1f1f; border-bottom: 4px solid #5865F2; border-radius: 10px; margin-bottom: 40px; }
+        h1 { margin: 0; font-size: 3rem; color: #5865F2; letter-spacing: 1px; }
+        
+        .server-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+            gap: 25px; 
+            max-width: 1100px; 
+            margin: 0 auto; 
+        }
+
+        .server-card { 
+            background: #1e1e1e; 
+            border-radius: 10px; 
+            padding: 25px; 
+            border: 1px solid #333;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        
+        .server-name { font-size: 1.5rem; color: #fff; margin-bottom: 12px; font-weight: bold; text-align: center; }
+        .server-ip { background: #000; padding: 10px; border-radius: 5px; font-family: 'Courier New', monospace; color: #5865F2; margin-bottom: 15px; font-size: 0.9rem; text-align: center; border: 1px dashed #5865F2; }
+        .server-desc { font-size: 0.95rem; color: #bbb; margin-bottom: 25px; flex-grow: 1; line-height: 1.5; }
+        
+        /* Bottone Discord Disabilitato */
+        .discord-btn { 
+            background: #5865F2; 
+            color: #ffffff; 
+            text-decoration: none; 
+            text-align: center; 
+            padding: 12px; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            opacity: 0.6; /* Rende il tasto spento */
+            pointer-events: none; /* Rende il tasto non cliccabile */
+            cursor: not-allowed;
+        }
+
+        .coming-soon-tag {
+            display: block;
+            text-align: center;
+            font-size: 0.7rem;
+            color: #ffcc00;
+            margin-top: 8px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        footer { text-align: center; margin-top: 60px; color: #555; font-size: 0.9rem; padding-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>McValve</h1>
+        <p>I server Minecraft più esclusivi</p>
+    </header>
+
+    <div class="server-grid">
+        
+        <!------- INIZIO BOX ------->
+        <div class="server-card">
+            <div class="server-name">Esempio Server</div>
+            <div class="server-ip">mc.esempio.it</div>
+            <p class="server-desc">Descrizione del server. Qui puoi scrivere le caratteristiche principali della community.</p>
+            <a href="#" class="discord-btn">VISITA DISCORD</a>
+            <span class="coming-soon-tag">COMING SOON</span>
+        </div>
+        <!------- FINE BOX ------->
+
+        <!------- INIZIO BOX ------->
+        <div class="server-card">
+            <div class="server-name">Secondo Server</div>
+            <div class="server-ip">play.mcvalve.it</div>
+            <p class="server-desc">Un altro esempio di server. Copia il blocco per aggiungerne altri alla lista.</p>
+            <a href="#" class="discord-btn">VISITA DISCORD</a>
+            <span class="coming-soon-tag">COMING SOON</span>
+        </div>
+        <!------- FINE BOX ------->
+
+    </div>
+
+    <footer>
+        &copy; 2024 McValve - Powered by GitHub Pages
+    </footer>
+
+</body>
+</html>
